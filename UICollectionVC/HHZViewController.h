@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HHZViewController.h
 //  UICollectionVC
 //
 //  Created by 黄含章 on 15/7/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HHZViewController : UIViewController
 
 @end
-
