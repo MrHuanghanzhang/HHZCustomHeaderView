@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HHZViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]init];
+    _window.frame = [UIScreen mainScreen].bounds;
+    HHZViewController *hhzVC = [[HHZViewController alloc]init];
+    UINavigationController *navC = [[UINavigationController alloc]initWithRootViewController:hhzVC];
+    _window.rootViewController = navC;
+    [_window makeKeyAndVisible];
     return YES;
 }
 

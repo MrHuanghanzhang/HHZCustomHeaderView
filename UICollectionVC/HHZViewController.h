@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HHZCollectionViewCell.h"
+#import "HHZScrollView.h"
 
-@interface HHZViewController : UIViewController
+@interface HHZViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+
+@property(nonatomic,strong)UICollectionView *collectionView;
 
 @end

@@ -10,4 +10,10 @@
 
 @interface HHZCollectionViewCell : UICollectionViewCell
 
+@property(nonatomic,strong)UIImageView *imageV;
+
+@property(nonatomic,strong)UILabel *label;
+
+@property(nonatomic,strong)UIButton *btn;
+
 @end
